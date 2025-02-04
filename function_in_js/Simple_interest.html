@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> simple interest</title>
+    </head>
+    <body>
+        <script>
+           function simple(p,t,r){
+            return p*t*r/100;
+           }
+           let p = parseInt(prompt("Enter a principle:"));
+           let t = parseInt(prompt("Enter a time:"));
+           let r = parseInt(prompt("Enter a rate:"));
+           let si = simple(p,t,r);
+           document.write("The simple interst =" + si);
+        </script>
+    </body>
+</html>

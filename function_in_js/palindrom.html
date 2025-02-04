@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Palindrome Check</title>
+    </head>
+    <body>
+        <script>
+            function reverse(n) {
+                let rev = 0;
+                while (n > 0) {
+                    rev = rev * 10 + (n % 10);
+                    n = Math.floor(n / 10);
+                }
+                return rev;
+            }
+
+            let n = parseInt(prompt("Enter a number:"));
+            let reversedNumber = reverse(n);
+            if (n === reversedNumber) {
+                document.write(n + " is a palindrome.");
+            } else {
+                document.write(n + " is not a palindrome.");
+            }
+        </script>
+    </body>
+</html>
